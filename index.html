@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://ux.ed.team/css/styles.css?201803301710">
+    <title>Arikok Cursos</title>
+    <style>
+        h1 {
+            margin-inline: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="ed-grid">
+        <h1>Arikok Cursos con POO</h1>
+    </div>
+    <!-- Add Course form -->
+    <div class="ed-grid">
+        <h2>Formulario de cursos</h2>
+        <p class="m-py-0">Ingrese los datos requeridos para crear un listado de cursos.</p>
+    </div>
+    <form action="" class="ed-container m-py-1" id="idCourses">
+        <label class="ed-item">
+            Nombre del curso
+            <input type="text" name="courseTitle" required>
+        </label>
+        <label class="ed-item">
+            Poster del curso
+            <input type="text" name="coursePoster" required>
+        </label>
+        <label class="ed-item">
+            Precio del curso
+            <input type="number" name="coursePrice" min="1" required>
+        </label>
+        <div class="ed-item m-py-3 s-py-3">
+            <input type="submit" value="Crear Curso" class="button full m-py-3 s-py-3">
+        </div>
+    </form>
+    <!-- Rendering courses -->
+    <div class="ed-grid m-grid-4 s-grid-2" id="courses"></div>
+
+
+    <!-- Add Teacher form -->
+    <div class="ed-grid">
+        <h2>Formulario de profesores</h2>
+        <p class="m-py-0">Ingrese los datos requeridos para crear un listado de profesores.</p>
+    </div>
+    <form action="" class="ed-container" id="idTeachers">
+        <label class="ed-item">
+            Nombre
+            <input type="text" name="teacherName" required>
+        </label>
+        <label class="ed-item">
+            Apellido
+            <input type="text" name="teacherLastname" required>
+        </label>
+        <label class="ed-item">
+            Imagen
+            <input type="text" name="teacherImage" required>
+        </label>
+        <label class="ed-item">
+            Cursos dictados
+            <input type="text" name="teacherDictatedCourses" required>
+        </label>
+        <label class="ed-item">
+            Cantidad de cursos dictados
+            <input type="number" name="teacherCoursesQty" min="1" required>
+        </label>
+        <div class="ed-item m-py-3 s-py-3">
+            <input type="submit" value="Inscribir Profesor" class="button full dark-color m-py-3 s-py-3">
+        </div>
+    </form>
+    <!-- Rendering teachers -->
+    <div class="ed-grid m-grid-2 s-grid-2" id="teachers"></div>
+
+
+    <!-- Add Student form -->
+    <div class="ed-grid">
+        <h2>Formulario de alumnos</h2>
+        <p class="m-py-0">Ingrese los datos requeridos para crear un listado de alumnos.</p>
+    </div>
+    <form action="" class="ed-container" id="idStudents">
+        <label class="ed-item">
+            Nombre
+            <input type="text" name="studentName" required>
+        </label>
+        <label class="ed-item">
+            Apellido
+            <input type="text" name="studentLastname" required>
+        </label>
+        <label class="ed-item">
+            Imagen
+            <input type="text" name="studentImage" required>
+        </label>
+        <label class="ed-item">
+            ¿Es Usuario Premium?
+            <input type="text" name="studentPremium" required>
+        </label>
+        <label class="ed-item">
+            Cantidad de cursos tomados
+            <input type="number" name="studentCoursesQty" min="1" required>
+        </label>
+        <div class="ed-item m-py-3 s-py-3">
+            <input type="submit" value="Inscribir Alumno" class="button full dark-color m-py-3 s-py-3">
+        </div>
+    </form>
+    <!-- Rendering students -->
+    <div class="ed-grid m-grid-4 s-grid-2" id="students"></div>
+
+    <script type="module" src="./scripts/index.js"></script>
+</body>
+</html>
